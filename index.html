@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Proteja suas informações com facilidade. Criptografe e descriptografe textos em segundos com nossa aplicação simples e eficiente."/>
+  <title>DECODIFICADOR DE TEXTO</title>
+  <link rel="icon" type="image/sgv" sizes="32x32" href="./assets/sunflower-header.svg"/>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Matemasie&family=Pacifico&display=swap" rel="stylesheet"/>
+  <script src="./app.js" defer></script>
+</head>
+
+<body>
+  <header class="logo">
+      <img class="logo__imagem" id="logo__imagem" src="./assets/sunflower-header.svg" alt="Logo-girassol">
+  </header>
+  <main class="container__decodificador">
+    <div class="section__input">
+      <textarea id="input__area" class="input__area" spellcheck="false" placeholder="Digite seu texto"></textarea>
+      <div class="input__alert__buttons">
+        <div class="input__alert__icon">
+          <span><img src="./assets/exclamation.png" alt="icone_exclamation"/></span>
+          <span><p>Apenas letras minúsculas e sem acento.</p></span>
+        </div>
+        <div class="input__buttons">
+          <button class="button cript input__ButtonsCriptografar" onclick="buttonCriptografar()" type="button" aria-label="CriptografarTexto">Criptografar</button>
+          <button class="button descript input__ButtonsDescriptografar" onclick="buttonDescriptografar()" type="button" aria-label="DescriptografarTexto">Descriptografar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="section__output" id="output_design">
+      <textarea class="output__area" placeholder="" spellcheck="false" readonly></textarea>
+      <div class="area_imagem">
+        <img class="output__imagem" id="OutputImagem" src="./assets/holding_sunflowe.png" alt="girl_girrasol_sorrindo">
+      </div>
+      <div class="output_textos">
+        <h2 class="output__mensagem">Nenhuma mensagem encontrada</h2>
+        <span class="output__texto">Digite um texto que você deseja criptografar ou descriptografar.</span>
+      </div>
+      <div>
+        <button id="button-copy" class="button output__buttonCopiar" onclick="copiarTexto()">Copiar</button>
+      </div>
+    </div>
+  </main>
+
+
+  <footer class="container__footer">
+    <div class="footer_">
+      <p> Desenvolvido por <span class="footer-design">Dayane</span>
+        <span class="footer-design">Santos</span></p>
+    </div>
+  </footer>
+</body>
+
+</html>
